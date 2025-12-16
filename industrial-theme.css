@@ -1,0 +1,171 @@
+:root {
+  --bg: #0b0f14;
+  --panel: rgba(255, 255, 255, 0.06);
+  --panel-strong: rgba(255, 255, 255, 0.09);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+  --accent: #E87018;
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.55);
+}
+
+body.body {
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(232, 112, 24, 0.16), rgba(232, 112, 24, 0) 55%),
+    radial-gradient(900px 500px at 80% 0%, rgba(191, 211, 229, 0.12), rgba(191, 211, 229, 0) 60%),
+    var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.body h1,
+body.body h2,
+body.body h3,
+body.body h4,
+body.body .industrial_heading1,
+body.body .products_heading,
+body.body .platform_heading,
+body.body .slide_heading {
+  font-family: "Space Grotesk", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+body.body a {
+  color: inherit;
+}
+
+body.body .navbar-2 {
+  background: rgba(232, 220, 195, 0.94);
+  border-bottom: 1px solid rgba(10, 12, 16, 0.1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+body.body .nav-link,
+body.body .text-block-10 {
+  color: #111217;
+}
+
+body.body .dropdown_link {
+  color: #111217;
+}
+
+body.body .products.w-dropdown-list {
+  background: rgba(17, 18, 23, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+}
+
+body.body .products.w-dropdown-list .dropdown_link {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+body.body .products.w-dropdown-list .dropdown_link:hover {
+  color: rgba(255, 255, 255, 0.98);
+}
+
+body.body .whatsapp {
+  filter: drop-shadow(0 14px 40px rgba(0, 0, 0, 0.55));
+}
+
+body.body .industrial_section,
+body.body .product_section,
+body.body .other_products_div {
+  background: transparent;
+}
+
+body.body .industrial_heading1 {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+body.body .text-block-18,
+body.body .platform_desc,
+body.body .platform_info_txt,
+body.body .ai_text,
+body.body .ai_text-2,
+body.body .ai_text-3,
+body.body .compant_txt2,
+body.body .compant_txt,
+body.body .list-item-3,
+body.body .click_to_enlarge {
+  color: var(--muted);
+}
+
+body.body .platform_div,
+body.body .sample_appl_div,
+body.body .produt_appln_div,
+body.body .qa_div,
+body.body .other_product_link,
+body.body .lets_talk_industrial,
+body.body .lets_talk_button,
+body.body .lets_talk_button-2,
+body.body .lets_talk_button-3 {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+body.body .platform_div:hover,
+body.body .sample_appl_div:hover,
+body.body .produt_appln_div:hover,
+body.body .qa_div:hover,
+body.body .other_product_link:hover {
+  background: var(--panel-strong);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+body.body .products_heading,
+body.body .platform_heading,
+body.body .slide_heading,
+body.body .heading-2,
+body.body .heading-3,
+body.body .heading-4 {
+  color: var(--accent);
+}
+
+body.body .w-slider {
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.28);
+  box-shadow: var(--shadow);
+}
+
+body.body .w-slider-mask {
+  border-radius: 18px;
+}
+
+body.body .w-slider-arrow-left,
+body.body .w-slider-arrow-right {
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.55));
+}
+
+body.body .footer {
+  background: rgba(0, 0, 0, 0.45);
+  border-top: 1px solid var(--border);
+}
+
+body.body .footer_link,
+body.body .social_media_link_block {
+  color: var(--muted);
+}
+
+body.body .footer_link:hover,
+body.body .social_media_link_block:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+body.body ::selection {
+  background: rgba(232, 112, 24, 0.32);
+}
+
+@media (max-width: 767px) {
+  body.body .platform_div,
+  body.body .sample_appl_div,
+  body.body .produt_appln_div,
+  body.body .qa_div {
+    border-radius: 14px;
+  }
+}
