@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="Perspectiv – Industrial AI vision systems and automation solutions." />
 </head>
-<body>
+<body class="home">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Perspectiv">
@@ -46,7 +46,7 @@
             <a href="#north-america-team">North America team</a>
           </div>
         </div>
-        <a href="#contact" class="btn-primary">Request demo</a>
+        <a href="#contact" class="btn-primary">Request a demo</a>
       </nav>
     </div>
   </header>
@@ -55,25 +55,64 @@
     <section class="hero">
       <div class="hero-bg-card"></div>
       <div class="container hero-inner">
-        <div class="hero-copy">
-          <h2>Industrial AI vision systems for real‑time quality inspection</h2>
+        <div class="hero-copy fade-in">
+          <h2>Industrial AI vision inspection for zero‑defect manufacturing</h2>
           <p>
-            Reduce defects, rework and manual inspection with edge‑ready AI
-            vision systems tuned for 24×7 manufacturing.
+            Detect defects with high precision and automate quality checks at
+            scale — rapid deployment, real outcomes, and audit‑ready reporting.
           </p>
           <div class="hero-proof" aria-label="Key outcomes">
-            <span>Faster inspection cycles</span>
-            <span>Traceable results &amp; reporting</span>
-            <span>Built for industrial deployment</span>
+            <span>95–99% detection accuracy*</span>
+            <span>Works offline / on‑prem</span>
+            <span>Built for 24×7 factory use</span>
           </div>
+          <div class="hero-note">*Varies by use case, part geometry and defect class.</div>
           <div class="hero-actions">
-            <a href="#contact" class="btn-primary">Request demo</a>
-            <a href="#cases" class="btn-secondary">See case studies</a>
+            <a href="#contact" class="btn-primary">Request a demo</a>
+            <a href="mailto:sales@perspectiv.in" class="btn-secondary">Talk to sales</a>
           </div>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual fade-in delay-2">
           <div class="hero-image-frame">
             <img class="hero-image-shift-up" src="zeiss_software_zadd_header_1000x1000.jpg" alt="Industrial AI vision system interface for quality inspection" width="1000" height="1000" decoding="async" fetchpriority="high" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Trusted by">
+      <div class="container trust-strip-inner fade-in delay-1">
+        <div class="trust-strip-label">Trusted by teams at</div>
+        <div class="trust-strip-logos" aria-label="Client logos">
+          <img src="images/clientele/intel.ico" alt="Intel" loading="lazy" decoding="async" onerror="this.style.display='none';" />
+          <img src="images/clientele/att.ico" alt="AT&T" loading="lazy" decoding="async" onerror="this.style.display='none';" />
+          <img src="images/clientele/titan.ico" alt="Titan" loading="lazy" decoding="async" onerror="this.style.display='none';" />
+          <img src="images/clientele/smartcricket.png" alt="SmartCricket" loading="lazy" decoding="async" onerror="this.style.display='none';" />
+          <img src="images/clientele/st.ico" alt="STMicroelectronics" loading="lazy" decoding="async" onerror="this.style.display='none';" />
+          <img src="images/clientele/ecobillz.ico" alt="EcoBillz" loading="lazy" decoding="async" onerror="this.style.display='none';" />
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-bar" aria-label="Why customers choose Perspectiv">
+      <div class="container trust-bar-inner fade-in delay-2">
+        <h3>Why manufacturers choose our AI platform</h3>
+        <div class="trust-bar-grid" aria-label="Key trust points">
+          <div class="trust-bar-item">
+            <div class="trust-bar-title">Built for production</div>
+            <div class="trust-bar-text">Edge‑ready systems designed for 24×7 uptime on the shop floor.</div>
+          </div>
+          <div class="trust-bar-item">
+            <div class="trust-bar-title">Deploy your way</div>
+            <div class="trust-bar-text">Works offline / on‑prem, with scalable rollouts across lines and plants.</div>
+          </div>
+          <div class="trust-bar-item">
+            <div class="trust-bar-title">Traceable QA</div>
+            <div class="trust-bar-text">Audit‑ready reporting with consistent, measurable inspection outcomes.</div>
+          </div>
+          <div class="trust-bar-item">
+            <div class="trust-bar-title">Fast pilot</div>
+            <div class="trust-bar-text">Rapid proof‑of‑value to validate defect classes before full deployment.</div>
           </div>
         </div>
       </div>
@@ -84,19 +123,18 @@
         <div>
           <h3>Industrial AI solution</h3>
           <p>
-            Perspectiv Labs builds end‑to‑end industrial AI vision systems –
-            calibrated optics and lighting, deterministic motion, edge/GPU
-            compute and trained deep‑learning models – engineered for 24×7
-            production environments.
+            Perspectiv Labs builds end‑to‑end industrial AI vision systems: optics
+            and lighting, deterministic motion, edge/GPU compute, and
+            deep‑learning models engineered for 24×7 production environments.
           </p>
         </div>
         <div>
           <h3>What it delivers</h3>
           <ul class="bullet-grid">
-            <li>Higher defect‑detection accuracy using CNN / transformer models.</li>
-            <li>Cycle‑time‑optimised inspection pipelines for high‑speed lines.</li>
-            <li>Traceable images, dimensional measurements and SPC reports.</li>
-            <li>Standardised architectures deployable across lines and plants.</li>
+            <li>High‑precision, real‑time inspection tuned for high‑speed lines.</li>
+            <li>Automated quality assurance with traceable results and reporting.</li>
+            <li>AI‑powered OCR and label/text verification when required.</li>
+            <li>Scalable deployment across lines and plants with standardised architectures.</li>
           </ul>
         </div>
       </div>
@@ -108,27 +146,27 @@
         <div class="applications-grid">
           <article class="application-card">
             <h4>Text / Label Read</h4>
-            <p>Read text or embossed part numbers and detect deviations from ideal values using vision.</p>
+            <p>AI‑powered OCR for accurate label and text verification on parts and packaging.</p>
           </article>
           <article class="application-card">
             <h4>Poka‑yoke</h4>
-            <p>Use vision systems to build detection or prevention based poka‑yoke by identifying the right variations.</p>
+            <p>Build detection and prevention poka‑yoke that flags wrong variants before they move downstream.</p>
           </article>
           <article class="application-card">
             <h4>Identify &amp; Count</h4>
-            <p>Identify, count and sort parts at various speeds with automated visual inspection.</p>
+            <p>Identify, count and sort parts at line speed with automated visual inspection.</p>
           </article>
           <article class="application-card">
             <h4>Part Inspection</h4>
-            <p>Detect macro and micro surface defects such as scratches, dents, missing features and colour issues.</p>
+            <p>Detect macro and micro defects such as scratches, dents, missing features and colour issues.</p>
           </article>
           <article class="application-card">
             <h4>Paint Inspection</h4>
-            <p>Check paint aesthetics and detect defects at speed on automotive and other painted components.</p>
+            <p>Check paint aesthetics and detect paint defects at speed on automotive and other coated components.</p>
           </article>
           <article class="application-card">
             <h4>Measurement</h4>
-            <p>Measure dimensions, gaps, positions and defect size using vision systems with accuracy down to 100 microns.</p>
+            <p>Measure dimensions, gaps, positions and defect size with vision systems down to 100‑micron precision.</p>
           </article>
           <article class="application-card">
             <h4>Tracking</h4>
@@ -698,7 +736,16 @@
     </section>
 
     <section id="features" class="section section-light">
-      <div class="container feature-grid">
+      <div class="container">
+        <div class="section-intro fade-in">
+          <h3>AI capabilities for industrial quality automation</h3>
+          <p>
+            Industrial‑grade hardware and software building blocks engineered for
+            high‑precision inspection, 24×7 uptime, and scalable deployments.
+          </p>
+        </div>
+      </div>
+      <div class="container feature-grid fade-in delay-1">
         <article class="feature-block">
           <h3>Edge AI Accelerator</h3>
           <ul class="bullet-grid">
@@ -748,6 +795,25 @@
             <li>Designed for industrial longevity</li>
           </ul>
         </article>
+      </div>
+    </section>
+
+    <section class="section section-dark" aria-label="Industries">
+      <div class="container">
+        <div class="section-intro fade-in">
+          <h3>Trusted across industries</h3>
+          <p>
+            Used in electronics, automotive, packaging, FMCG and precision
+            manufacturing.
+          </p>
+        </div>
+        <div class="industry-pill-row fade-in delay-1" aria-label="Industries list">
+          <span class="industry-pill">Electronics</span>
+          <span class="industry-pill">Automotive</span>
+          <span class="industry-pill">Packaging</span>
+          <span class="industry-pill">FMCG</span>
+          <span class="industry-pill">Precision manufacturing</span>
+        </div>
       </div>
     </section>
 
@@ -1037,6 +1103,14 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-col">
+        <h4>Perspectiv Labs</h4>
+        <p>
+          Industrial AI vision inspection systems for zero‑defect manufacturing,
+          built for real‑time deployment on the shop floor.
+        </p>
+        <p>Bengaluru, India</p>
+      </div>
+      <div class="footer-col">
         <h4>Let's talk</h4>
         <p><a href="mailto:contact@perspectiv.in" class="contact-link">contact@perspectiv.in</a></p>
         <p><a href="tel:+919591084455" class="contact-link">+91‑95910 84455</a></p>
@@ -1053,11 +1127,11 @@
       <div class="footer-col">
         <h4>Quick links</h4>
         <div class="footer-links">
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <a href="#features">Capabilities</a>
           <a href="#platform">AI training</a>
           <a href="#company">Company</a>
-          <a href="#contact">Request demo</a>
+          <a href="#contact">Request a demo</a>
         </div>
       </div>
       <div class="footer-col">
@@ -1092,7 +1166,37 @@
         </div>
       </div>
     </div>
+    <div class="container footer-bottom">
+      <p>© 2025 Perspectiv Labs. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('main-nav');
+      if (!toggle || !nav) return;
+
+      function setOpen(isOpen) {
+        document.body.classList.toggle('nav-open', isOpen);
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      }
+
+      toggle.addEventListener('click', function () {
+        var isOpen = document.body.classList.contains('nav-open');
+        setOpen(!isOpen);
+      });
+
+      nav.addEventListener('click', function (e) {
+        var link = e.target && e.target.closest ? e.target.closest('a') : null;
+        if (link) setOpen(false);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+    })();
+  </script>
 
 </body>
 </html>
