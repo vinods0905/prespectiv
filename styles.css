@@ -328,6 +328,32 @@ body.nav-open .nav-toggle-bars::after {
   transform: translateY(0);
 }
 
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.78rem 1.12rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(245, 123, 35, 0.45);
+  background: rgba(0, 0, 0, 0.12);
+  color: #ffe7c2;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.btn-secondary:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  background: rgba(245, 123, 35, 0.14);
+  border-color: rgba(245, 123, 35, 0.7);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
 .link-ghost {
   padding: 0.3rem 0.6rem;
   color: var(--text-muted);
@@ -383,6 +409,50 @@ body.nav-open .nav-toggle-bars::after {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem 1.2rem;
+}
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.3rem;
+}
+
+.hero-proof span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(245, 123, 35, 0.12);
+  border: 1px solid rgba(245, 123, 35, 0.16);
+  color: rgba(255, 231, 194, 0.9);
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.cta-band {
+  background: radial-gradient(circle at top left, rgba(245, 123, 35, 0.22), rgba(5, 6, 8, 1) 70%);
+  border-top: 1px solid rgba(245, 123, 35, 0.26);
+  border-bottom: 1px solid rgba(245, 123, 35, 0.18);
+}
+
+.cta-band-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.4rem;
+}
+
+.cta-band-inner h3 {
+  margin-bottom: 0.35rem;
+}
+
+.cta-band-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
 }
 
 .hero-visual {
@@ -516,8 +586,8 @@ section[id] {
 }
 
 .section h3 {
-  margin: 0 0 0.35rem;
-  font-size: 1.4rem;
+  margin: 0 0 0.55rem;
+  font-size: 1.55rem;
   color: var(--accent);
 }
 
@@ -534,6 +604,10 @@ section[id] {
 @media (max-width: 720px) {
   .container {
     width: min(1180px, 100% - 2rem);
+  }
+
+  .section {
+    padding: 2.15rem 0;
   }
 
   .header-inner {
@@ -1581,6 +1655,16 @@ section[id] {
   .footer-grid,
   .thankyou-inner {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cta-band-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta-band-actions {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 
