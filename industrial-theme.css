@@ -161,6 +161,33 @@ body.body ::selection {
   background: rgba(232, 112, 24, 0.32);
 }
 
+@media (max-width: 991px) {
+  body.body .navbar-2.w--open {
+    max-height: none;
+  }
+
+  body.body .navbar-2.w--open .w-nav-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  body.body .navbar-2.w--open .w-nav-overlay [data-nav-menu-open] {
+    position: relative;
+    top: 0;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 @media (max-width: 767px) {
   body.body .platform_div,
   body.body .sample_appl_div,

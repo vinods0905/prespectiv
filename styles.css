@@ -173,6 +173,8 @@ textarea:focus-visible {
   background: transparent;
   border: 1px solid rgba(17, 18, 23, 0.18);
   color: #111217;
+  position: relative;
+  z-index: 200;
 }
 
 .nav-toggle:hover {
@@ -182,9 +184,10 @@ textarea:focus-visible {
 .nav-toggle-bars {
   position: relative;
   width: 20px;
-  height: 2px;
+  height: 3px;
   border-radius: 999px;
   background: rgba(17, 18, 23, 0.9);
+  display: block;
 }
 
 .nav-toggle-bars::before,
@@ -193,17 +196,23 @@ textarea:focus-visible {
   position: absolute;
   left: 0;
   width: 20px;
-  height: 2px;
+  height: 3px;
   border-radius: 999px;
   background: rgba(17, 18, 23, 0.9);
 }
 
 .nav-toggle-bars::before {
-  top: -6px;
+  top: -7px;
 }
 
 .nav-toggle-bars::after {
-  top: 6px;
+  top: 7px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .nav-toggle {
+    display: inline-flex;
+  }
 }
 
 body.nav-open .nav-toggle-bars {
